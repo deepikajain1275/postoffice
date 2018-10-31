@@ -1,0 +1,83 @@
+[
+    {
+        "ID": 1,
+        "Name": "Package1",
+        "Type": "Letter",
+        "Weight": "Less than 1kg",
+        "Status": "Delivered",
+        "Sender": 123,
+        "Recevier": 456
+    },
+    {
+        "ID": 2,
+        "Name": "Package2",
+        "Type": "Packages",
+        "Weight": "Between 1kg and 5kg,",
+        "Status": "Received and processed in the parcel center of origin",
+        "Sender": 123456,
+        "Recevier": 456789
+    },
+    {
+        "ID": 3,
+        "Name": "Package3",
+        "Type": "Letter",
+        "Weight": "More than 5kg.",
+        "Status": "Received and processed in the destination parcel center",
+        "Sender": 1230843,
+        "Recevier": 4563243
+    },
+    {
+        "ID": 4,
+        "Name": "Package4",
+        "Type": "Letter",
+        "Weight": "Less than 1kg",
+        "Status": "Delivered",
+        "Sender": 123,
+        "Recevier": 456
+    },
+    {
+        "ID": 5,
+        "Name": "Package5",
+        "Type": "Packages",
+        "Weight": "Between 1kg and 5kg,",
+        "Status": "Received and processed in the parcel center of origin",
+        "Sender": 123456,
+        "Recevier": 456789
+    },
+    {
+        "ID": 6,
+        "Name": "Package6",
+        "Type": "Letter",
+        "Weight": "More than 5kg.",
+        "Status": "Received and processed in the destination parcel center",
+        "Sender": 1230843,
+        "Recevier": 4563243
+    },
+    {
+        "ID": 7,
+        "Name": "Package7",
+        "Type": "Letter",
+        "Weight": "Less than 1kg",
+        "Status": "Delivered",
+        "Sender": 123,
+        "Recevier": 456
+    },
+    {
+        "ID": 8,
+        "Name": "Package8",
+        "Type": "Packages",
+        "Weight": "Between 1kg and 5kg,",
+        "Status": "Received and processed in the parcel center of origin",
+        "Sender": 123456,
+        "Recevier": 456789
+    },
+    {
+        "ID": 9,
+        "Name": "Package9",
+        "Type": "Letter",
+        "Weight": "More than 5kg.",
+        "Status": "Received and processed in the destination parcel center",
+        "Sender": 1230843,
+        "Recevier": 4563243
+    }
+]

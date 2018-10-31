@@ -1,0 +1,47 @@
+[
+    {
+        "ID": 1,
+        "Name": "Location1",
+        "ZipCode": "1234"
+    },
+    {
+        "ID": 2,
+        "Name": "Location2",
+        "ZipCode": "1234"
+    },
+    {
+        "ID": 3,
+        "Name": "Location3",
+        "ZipCode": "1234"
+    },
+    {
+        "ID": 4,
+        "Name": "Location4",
+        "ZipCode": "1234"
+    },
+    {
+        "ID": 5,
+        "Name": "Location5",
+        "ZipCode": "1234"
+    },
+    {
+        "ID": 6,
+        "Name": "Location6",
+        "ZipCode": "1234"
+    },
+    {
+        "ID": 7,
+        "Name": "Location7",
+        "ZipCode": "1234"
+    },
+    {
+        "ID": 8,
+        "Name": "Location8",
+        "ZipCode": "1234"
+    },
+    {
+        "ID": 9,
+        "Name": "Location9",
+        "ZipCode": "1234567"
+    }
+]

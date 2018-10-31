@@ -1,0 +1,21 @@
+<div class="filterlist">
+  <h5>Filters</h5>
+  <ul>
+      <h6><b>Weight</b></h6>
+      <div *ngFor="let weight of weights">
+        <input type="checkbox">
+        {{weight}}
+      </div><br>
+      <h6><b>Status</b></h6>
+      <div *ngFor="let statu of status">
+        <input type="checkbox">
+        {{statu}}
+      </div>
+      <br>
+      <h6><b>Location</b></h6>
+      <div *ngFor="let location of locations">
+        <input type="checkbox">
+        {{location.Name}}
+      </div>
+  </ul>
+</div>
