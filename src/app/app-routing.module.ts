@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ListComponent } from './ui/list/list.component';
+import { AddshipmentComponent } from './ui/addshipment/addshipment.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
-    path: 'dashboard', component: ListComponent
+    path: 'home', component: ListComponent, data: { isAdd: false }
+  },
+  {
+    path: 'addshipmet', component: AddshipmentComponent
   }
 ];
 

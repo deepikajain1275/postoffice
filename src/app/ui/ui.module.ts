@@ -4,17 +4,21 @@ import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
 import { ListComponent } from './list/list.component';
 import { FilterComponent } from './filter/filter.component';
+import { AddshipmentComponent } from './addshipment/addshipment.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
 
   declarations: [
     LayoutComponent,
     HeaderComponent,
     ListComponent,
-    FilterComponent],
+    FilterComponent,
+    AddshipmentComponent],
 
   exports: [LayoutComponent]
 })

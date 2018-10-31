@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AllfetchdataService {
+  public shipment = {};
 
   constructor(private http: HttpClient) {
 
@@ -17,6 +18,10 @@ export class AllfetchdataService {
 
   public getLocation(): Observable<any> {
     return this.http.get("../assets/location.json")
+  }
+
+  public addShipment(shipment) {
+      this.shipment= shipment;
   }
 
   public getPager(totalItems: number, currentPage: number = 1, pageSize: number = 5) {

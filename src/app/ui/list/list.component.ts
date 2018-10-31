@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AllfetchdataService } from 'src/app/service/allfetchdata.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -11,14 +12,26 @@ export class ListComponent implements OnInit {
   private values = [];
   pager: any = {};
   pagedItems: any[];
+  private shipment = null;
 
-  constructor(private allfetchdataService: AllfetchdataService) {
-
+  constructor(private allfetchdataService: AllfetchdataService,
+    private route: Router,
+    private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.queryParams.subscribe(params => {
+      if (params.Name) {
+        console.log("Shipment",params);
+        this.shipment = params;
+      }
+    });
   }
 
   ngOnInit() {
     this.allfetchdataService.getShippemntList().subscribe(data => {
       this.values = data;
+      if (this.shipment != null) {
+        this.values.push(this.shipment);
+      }
+      console.log(this.values);
       this.setPage(1);
     });
   }
@@ -37,15 +50,6 @@ export class ListComponent implements OnInit {
   }
 
   addShipment() {
-    const shipment = {
-      "ID": 8,
-      "Name": "Package8",
-      "Type": "Packages",
-      "Weight": "Between 1kg and 5kg,",
-      "Status": "Received and processed in the parcel center of origin",
-      "Sender": 123456,
-      "Recevier": 456789
-    }
-   
+    this.route.navigate(['../addshipmet'], { relativeTo: this.activatedRoute });
   }
 }

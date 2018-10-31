@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="jumbotron">
+    <form name="form" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" required id="name" type="text" [(ngModel)]="model.name" name="name">
+      </div>
+
+      <div>
+        <label for="type">Type:</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" name="type" ng-control="options" type="radio" value="Letter" [(ngModel)]="model.type">Letter
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" name="type" ng-control="options" type="radio" value="Package" [(ngModel)]="model.type">Package
+        </label>
+      </div>
+
+      <div style="margin-top: 10px;">
+        <label for="name">Weight:</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" name="weight" ng-control="options" type="radio" value="Less than 1kg"
+            [(ngModel)]="model.weight">Less than 1kg
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" name="weight" ng-control="options" type="radio" value="Between 1kg and 5kg"
+            [(ngModel)]="model.weight">Between 1kg and 5kg
+        </label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <label class="form-check-label">
+          <input class="form-check-input" name="weight" ng-control="options" type="radio" value="More than 5kg"
+            [(ngModel)]="model.weight">
+          More than 5kg
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label style="margin-top: 10px;" for="sendercode">Sender Zip code</label>
+        <select class="form-control" [(ngModel)]="model.Sender" name="senderloaction">
+          <option *ngFor="let location of locations" [ngValue]="location.ZipCode">{{location.Name}}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label style="margin-top: 10px;" for="receivercode">Receiver Zip code</label>
+        <select class="form-control" [(ngModel)]="model.Recevier" name="receivercode">
+          <option *ngFor="let location of locations" [ngValue]="location.ZipCode">{{location.Name}}</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-default">Add</button>
+    </form>
+  </div>
+</div>
